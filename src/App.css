@@ -27,14 +27,30 @@ h1 {
   color: #555;
 }
 
-/* Timer Style */
+.start-button{
+  color: white;
+  background-color: #27ae60;
+  border: 2px #fff;
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: #27ae60;
+  font-weight: 600;
+  font-size: large;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+:hover.start-button{
+  background-color: #2ecc71;
+  transform: scale(1.1);
+}
+
 .timer {
   font-size: 1.5em;
   color: #e74c3c;
   margin-bottom: 20px;
 }
 
-/* Quiz Styles */
 .quiz-question {
   font-size: 1.2em;
   margin-bottom: 20px;
@@ -121,6 +137,9 @@ a:focus {
   box-shadow: 0 0 3px 2px rgba(100, 100, 250, 0.5);
 }
 
+
+/* ANIMATION LITLE BIT */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -132,10 +151,18 @@ a:focus {
   }
 }
 
+/* RESPONSIV */
+
 @media (max-width: 600px) {
   .app {
-    padding: 1rem;
+    min-width: 50px;
     border-radius: 8px;
+  }
+  
+  .quiz{
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
   }
 
   .quiz h2 {
@@ -149,6 +176,8 @@ a:focus {
   .options button {
     padding: 8px 16px;
     font-size: 14px;
+    width: 80%;
+    margin: auto;
   }
 
   .timer {

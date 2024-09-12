@@ -3,7 +3,6 @@ import '../App.css';
 import { CiStopwatch } from "react-icons/ci";
 
 
-
 const Quiz = ({ quiz, currentQuestion, timeLeft, handleAnswerOptionClick }) => {
   return (
     <div className="quiz">
